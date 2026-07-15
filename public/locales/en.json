@@ -1,0 +1,61 @@
+{
+  "appvue": {
+    "babelizePractice": "Babelize Practice",
+    "babelizeVuePracticeI18n": "Babelize Vue Practice — i18n training project",
+    "products": "products",
+    "products_2": "Products",
+    "profile": "Profile",
+    "notifications": "Notifications",
+    "content": "Content",
+    "settings": "Settings"
+  },
+  "notification-feedvue": {
+    "notifications": "Notifications",
+    "nActors0LikedYour": "{{ n.actors[0] }} liked your post"
+  },
+  "product-cardvue": {
+    "products": "Products",
+    "onlyProductInstockIn": "Only {{ product.inStock }} in stock",
+    "outOfStock": "Out of stock"
+  },
+  "rich-contentvue": {
+    "richContent": "Rich Content"
+  },
+  "settings-panelvue": {
+    "settings": "Settings",
+    "display": "Display",
+    "language": "Language",
+    "english": "English",
+    "hindi": "Hindi",
+    "deutsch": "Deutsch",
+    "日本語": "日本語",
+    "العربية": "العربية",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "dateFormat": "Date format",
+    "monthDayYear": "Month/Day/Year",
+    "dayMonthYear": "Day/Month/Year",
+    "yearMonthDay": "Year/Month/Day",
+    "notifications": "Notifications",
+    "emailNotifications": "Email notifications",
+    "pushNotifications": "Push notifications",
+    "search": "Search",
+    "rtlSample": "RTL Sample",
+    "thisTextFlowsRightToLeftFor": "This text flows right-to-left for Arabic/Hebrew locales."
+  },
+  "user-profilevue": {
+    "userProfiles": "User Profiles",
+    "welcomeBackUserName": "Welcome back, {{ user.name }}!",
+    "memberSinceUserJoindateTolocaledatestring": "Member since: {{ user.joinDate.toLocaleDateString() }}",
+    "joinedTimeagoUserJoindate": "Joined {{ timeAgo(user.joinDate) }}",
+    "he": "He",
+    "she": "She",
+    "they": "They",
+    "uploadedUserMessages1": "uploaded {{ user.messages || 1 }} photo{{ user.messages === 1 ? '' : 's' }}"
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "en"
+  }
+}

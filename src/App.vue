@@ -3,8 +3,7 @@
     <header>
       <h1>Babelize Practice</h1>
       <nav>
-        <button
-          v-for="tab in tabs"
+        <button           v-for="tab in tabs"
           :key="tab.key"
           :class="{ active: activeTab === tab.key }"
           @click="activeTab = tab.key"
@@ -12,11 +11,11 @@
       </nav>
     </header>
     <main>
-      <ProductCard v-if="activeTab === 'products'" />
-      <UserProfile v-if="activeTab === 'profile'" />
-      <NotificationFeed v-if="activeTab === 'notifications'" />
-      <RichContent v-if="activeTab === 'content'" />
-      <SettingsPanel v-if="activeTab === 'settings'" />
+      <ProductCard v-if="activeTab === 'products'" ></ProductCard>
+      <UserProfile v-if="activeTab === 'profile'" ></UserProfile>
+      <NotificationFeed v-if="activeTab === 'notifications'" ></NotificationFeed>
+      <RichContent v-if="activeTab === 'content'" ></RichContent>
+      <SettingsPanel v-if="activeTab === 'settings'" ></SettingsPanel>
     </main>
     <footer>
       <p>Babelize Vue Practice — i18n training project</p>
@@ -24,30 +23,29 @@
   </div>
 </template>
 
-<script>
-import ProductCard from './components/ProductCard.vue'
-import UserProfile from './components/UserProfile.vue'
-import NotificationFeed from './components/NotificationFeed.vue'
-import RichContent from './components/RichContent.vue'
-import SettingsPanel from './components/SettingsPanel.vue'
+<script>import { t } from "@/i18n";
+import ProductCard from './components/ProductCard.vue';
+import UserProfile from './components/UserProfile.vue';
+import NotificationFeed from './components/NotificationFeed.vue';
+import RichContent from './components/RichContent.vue';
+import SettingsPanel from './components/SettingsPanel.vue';
 
 export default {
   name: 'App',
   components: { ProductCard, UserProfile, NotificationFeed, RichContent, SettingsPanel },
   data() {
     return {
-      activeTab: 'products',
+      activeTab: t("appvue.products"),
       tabs: [
-        { key: 'products', label: 'Products' },
-        { key: 'profile', label: 'Profile' },
-        { key: 'notifications', label: 'Notifications' },
-        { key: 'content', label: 'Content' },
-        { key: 'settings', label: 'Settings' }
-      ]
-    }
+      { key: 'products', label: t("appvue.products_2") },
+      { key: 'profile', label: t("appvue.profile") },
+      { key: 'notifications', label: t("appvue.notifications") },
+      { key: 'content', label: t("appvue.content") },
+      { key: 'settings', label: t("appvue.settings") }]
+
+    };
   }
-}
-</script>
+};</script>
 
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
