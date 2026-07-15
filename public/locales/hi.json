@@ -1,0 +1,61 @@
+{
+  "appvue": {
+    "babelizePractice": "बअबएलइzए प्रअcटइcए",
+    "babelizeVuePracticeI18n": "Babelize Vue Practice i18n प्रशिक्षण परियोजना",
+    "products": "उत्पादों उत्पादों",
+    "products_2": "Products Products",
+    "profile": "प्रोफ़ाइल",
+    "notifications": "नोटिफिकेशन",
+    "content": "Content Content",
+    "settings": "सेटिंग्स"
+  },
+  "notification-feedvue": {
+    "notifications": "नोटिफिकेशन",
+    "nActors0LikedYour": "{{ n.actors[0] }} liked your post"
+  },
+  "product-cardvue": {
+    "products": "Products Products",
+    "onlyProductInstockIn": "केवल {{ product.inStock }} स्टॉक में",
+    "outOfStock": "स्टॉक से बाहर"
+  },
+  "rich-contentvue": {
+    "richContent": "रइच cओनटएनट"
+  },
+  "settings-panelvue": {
+    "settings": "सेटिंग्स",
+    "display": "डिस्प्ले डिस्प्ले",
+    "language": "भाषा भाषा",
+    "english": "अंग्रेजी",
+    "hindi": "हिंदी",
+    "deutsch": "जर्मन",
+    "日本語": "日本語",
+    "العربية": "अरबी",
+    "theme": "थीम थीम",
+    "dark": "डार्क डार्क",
+    "light": "प्रकाश प्रकाश",
+    "dateFormat": "प्रारूप Date प्रारूप",
+    "monthDayYear": "महीने/दिन/वर्ष",
+    "dayMonthYear": "दिन/महीने/वर्ष",
+    "yearMonthDay": "वर्ष/महीने/दिन",
+    "notifications": "नोटिफिकेशन",
+    "emailNotifications": "ईमेल सूचनाएं",
+    "pushNotifications": "पुश नोटिफिकेशन",
+    "search": "खोजें",
+    "rtlSample": "रटल सअमपलए",
+    "thisTextFlowsRightToLeftFor": "यह पाठ अरबी / हिब्रू स्थानों के लिए दाएं-बाएं बहता है।"
+  },
+  "user-profilevue": {
+    "userProfiles": "उसएर प्रओफइलएस",
+    "welcomeBackUserName": "आपका स्वागत है वापस, {{ user.name }}!",
+    "memberSinceUserJoindateTolocaledatestring": "सदस्य के बाद सेः {{ user.joinDate.toLocaleDateString() }}",
+    "joinedTimeagoUserJoindate": "{{ timeAgo(user.joinDate) }} में शामिल हुए",
+    "he": "वह",
+    "she": "वह",
+    "they": "वे वे",
+    "uploadedUserMessages1": "अपलोड किया गया {{ user.messages || 1 }} फोटो{{ user.messages === 1 ? '' : 's' }}"
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "hi"
+  }
+}
