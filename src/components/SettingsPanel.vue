@@ -6,9 +6,9 @@
       <h3>Display</h3>
       <div class="row">
         <label>Language</label>
-        <select>
+        <select v-model="selectedLocale" @change="changeLocale">
           <option value="en">English</option>
-          <option value="fr">Hindi</option>
+          <option value="hi">Hindi</option>
           <option value="de">Deutsch</option>
           <option value="ja">日本語</option>
           <option value="ar">العربية</option>
@@ -56,8 +56,20 @@
 </template>
 
 <script>
+import { setLocale } from '@/i18n.js'
+
 export default {
-  name: 'SettingsPanel'
+  name: 'SettingsPanel',
+  data() {
+    return {
+      selectedLocale: this.$i18n.locale.value
+    }
+  },
+  methods: {
+    changeLocale() {
+      setLocale(this.selectedLocale)
+    }
+  }
 }
 </script>
 
